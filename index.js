@@ -21,7 +21,7 @@ console.log(chalk.yellow("Lista") + chalk.dim(" para exibir a lista ordenada"));
 console.log(chalk.red("Sair") + chalk.dim(" para finalizar e exibir a Lista"));
 
 // loop para leitura das entradas e condicoes para enquanto for diferente de sair
-while (option !== "sair") {
+while (option !== "sair" && option !== "Sair") {
   option = readlineSync.question();
   if (option === "Lista" || option === "lista") {
     listItems();
